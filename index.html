@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oficina Diesel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Oficina Diesel</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#precos">Preços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#novidades">Novidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CAPA -->
+  <section class="container py-5 text-center">
+    <h1 class="display-5 fw-bold">Seu caminhão de volta à estrada, mais rápido</h1>
+    <p class="lead mb-4">Manutenção diesel para caminhões, ônibus e máquinas pesadas.</p>
+    <a href="#contato" class="btn btn-warning" data-assunto="Agendar revisão">Agendar revisão</a>
+    <a href="#contato" class="btn btn-outline-dark" data-assunto="Pedir orçamento">Pedir orçamento</a>
+    <img src="imagens/caminhao.png" class="img-fluid rounded mt-5" alt="Caminhões brancos na estrada">
+  </section>
+
+  <!-- CLIENTES -->
+  <section class="container py-5 text-center">
+    <p class="text-uppercase text-secondary fw-semibold mb-4">Quem confia na gente</p>
+    <div class="row g-4 align-items-center">
+      <div class="col-6 col-md"><span class="fs-4 fw-bold text-secondary">TransCarga</span></div>
+      <div class="col-6 col-md"><span class="fs-4 fw-bold text-secondary">Terraplena</span></div>
+      <div class="col-6 col-md"><span class="fs-4 fw-bold text-secondary">Expresso Planalto</span></div>
+      <div class="col-6 col-md"><span class="fs-4 fw-bold text-secondary">Pedreira São Jorge</span></div>
+      <div class="col-6 col-md"><span class="fs-4 fw-bold text-secondary">Boa Safra Agrícola</span></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇO 1 -->
+  <section class="container py-5" id="servicos">
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <h2>Máquinas pesadas e linha amarela</h2>
+        <p>Manutenção de escavadeiras, retroescavadeiras e carregadeiras, na sua obra ou aqui na oficina.</p>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalInfo" data-titulo="Máquinas pesadas e linha amarela" data-texto="Atendemos escavadeiras, retroescavadeiras, carregadeiras e motoniveladoras. Fazemos revisão do sistema hidráulico, troca de mangueiras e filtros, manutenção de esteiras e diagnóstico do motor, na sua obra ou aqui na oficina, com agendamento.">Saiba mais</button>
+      </div>
+      <div class="col-md-6">
+        <img src="imagens/escavadeira.png" class="img-fluid rounded" alt="Escavadeira amarela trabalhando em uma obra">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇO 2 -->
+  <section class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-md-6">
+        <img src="imagens/oficina.png" class="img-fluid rounded" alt="Mecânico regulando as válvulas de um motor diesel">
+      </div>
+      <div class="col-md-6">
+        <h2>Motores diesel e injeção eletrônica</h2>
+        <p>Retífica, regulagem de válvulas, bicos injetores e diagnóstico com scanner, feitos por mecânicos de linha pesada.</p>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalInfo" data-titulo="Motores diesel e injeção eletrônica" data-texto="Fazemos retífica completa de motores diesel, regulagem de válvulas, teste e calibração de bicos injetores e diagnóstico eletrônico com scanner. Todo serviço sai com laudo detalhado do que foi feito.">Saiba mais</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTO -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <p class="text-uppercase text-secondary fw-bold mb-3">Terraplena</p>
+          <p class="fs-4 fst-italic">"Meu caminhão ficou três dias parado em outra oficina. Aqui acharam o defeito na injeção em uma manhã e já saí na estrada no mesmo dia."</p>
+          <p class="fw-bold mb-0">Carlos Menezes</p>
+          <p class="text-secondary">Gerente de frota</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREÇOS -->
+  <section class="container py-5 text-center" id="precos">
+    <h2 class="fw-bold">Planos de manutenção</h2>
+    <p class="text-secondary mb-5">Escolha o plano que cabe na sua frota.</p>
+
+    <div class="row g-4">
+
+      <!-- CARTÃO 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5">Revisão avulsa</h3>
+            <p class="text-secondary">Para quem tem um veículo só</p>
+            <p class="display-6 fw-bold">R$ 450 <span class="fs-6 fw-normal text-secondary">/ visita</span></p>
+            <ul class="list-unstyled mb-4">
+              <li>Troca de óleo e filtros</li>
+              <li>Checagem de freios</li>
+              <li>Diagnóstico com scanner</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline-dark w-100" data-assunto="Plano Revisão avulsa">Agendar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTÃO 2 (destaque) -->
+      <div class="col-md-4">
+        <div class="card h-100 border-warning border-2">
+          <div class="card-body">
+            <span class="badge text-bg-warning mb-2">Mais escolhido</span>
+            <h3 class="h5">Plano Frota</h3>
+            <p class="text-secondary">Para quem tem vários veículos rodando</p>
+            <p class="display-6 fw-bold">R$ 1.200 <span class="fs-6 fw-normal text-secondary">/ mês</span></p>
+            <ul class="list-unstyled mb-4">
+              <li>Revisões preventivas programadas</li>
+              <li>Diagnóstico com scanner ilimitado</li>
+              <li>Socorro mecânico 24h</li>
+              <li>Prioridade na agenda</li>
+            </ul>
+            <a href="#contato" class="btn btn-warning w-100" data-assunto="Plano Frota">Contratar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARTÃO 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h5">Contrato Empresarial</h3>
+            <p class="text-secondary">Para empresas com frota grande</p>
+            <p class="display-6 fw-bold">R$ 2.900 <span class="fs-6 fw-normal text-secondary">/ mês</span></p>
+            <ul class="list-unstyled mb-4">
+              <li>Equipe dedicada à sua frota</li>
+              <li>Atendimento na sua garagem</li>
+              <li>Relatório mensal de manutenção</li>
+              <li>Socorro mecânico 24h</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline-dark w-100" data-assunto="Contrato Empresarial">Pedir proposta</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHAMADA FINAL -->
+  <section class="container py-5">
+    <div class="row g-0 rounded overflow-hidden bg-dark text-white">
+      <div class="col-md-6 p-4 p-md-5 d-flex flex-column justify-content-center text-start">
+        <h2 class="fw-bold">Pronto pra voltar à estrada?</h2>
+        <p class="mb-4">Agende uma revisão e receba um diagnóstico completo do seu veículo, sem compromisso.</p>
+        <a href="#contato" class="btn btn-warning align-self-start" data-assunto="Agendar revisão">Agendar agora</a>
+      </div>
+      <div class="col-md-6">
+        <img src="imagens/caminhao.png" class="w-100 h-100 object-fit-cover" alt="Caminhões brancos na estrada">
+      </div>
+    </div>
+  </section>
+
+  <!-- NOVIDADES -->
+  <section class="container py-5" id="novidades">
+    <h2 class="fw-bold text-center mb-5">Novidades da oficina</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/novidade1.webp" class="card-img-top foto-novidade" alt="Mecânico inspecionando o cabeçote de um motor diesel">
+          <div class="card-body">
+            <h3 class="h5">5 sinais de que seu diesel precisa de revisão</h3>
+            <p class="text-secondary">Fumaça escura, perda de força e consumo alto podem avisar antes da quebra.</p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalInfo" data-titulo="5 sinais de que seu diesel precisa de revisão" data-texto="Fumaça preta ou azulada no escapamento, perda de força nas subidas, consumo de diesel acima do normal, dificuldade na partida a frio e ruídos metálicos no motor. Qualquer um desses sinais já justifica uma revisão. Ignorar costuma transformar um reparo simples em retífica.">Ler mais</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/novidade2.jpg" class="card-img-top foto-novidade" alt="Oficina com carregadeira e caminhões fora de estrada em manutenção">
+          <div class="card-body">
+            <h3 class="h5">Manutenção preventiva em máquinas de obra</h3>
+            <p class="text-secondary">Como evitar máquina parada no meio do cronograma.</p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalInfo" data-titulo="Manutenção preventiva em máquinas de obra" data-texto="Máquina parada custa mais que a manutenção. Siga o intervalo de horas de trabalho indicado pelo fabricante para óleo e filtros, inspecione mangueiras hidráulicas e esteiras toda semana e registre cada intervenção. Um plano preventivo reduz as paradas inesperadas no meio do cronograma.">Ler mais</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="imagens/novidade3.webp" class="card-img-top foto-novidade" alt="Mecânico retirando o comando de válvulas de um caminhão">
+          <div class="card-body">
+            <h3 class="h5">Retífica de motor: quando vale a pena</h3>
+            <p class="text-secondary">Os sinais de desgaste que pedem abrir o motor antes que o prejuízo cresça.</p>
+            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalInfo" data-titulo="Retífica de motor: quando vale a pena" data-texto="Vale retificar quando o motor consome óleo em excesso, perde compressão ou superaquece com frequência. Em motores robustos de caminhão, a retífica costuma custar bem menos que um motor novo e devolve a vida útil. Um diagnóstico antes mostra se compensa.">Ler mais</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="bg-light py-5" id="contato">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <div class="col-lg-5">
+          <h2 class="fw-bold">Fale com a gente</h2>
+          <p class="text-secondary">Preencha o formulário e nossa equipe retorna em até 1 dia útil. Se for urgente, ligue.</p>
+          <ul class="list-unstyled">
+            <li class="fw-semibold"><a href="https://wa.me/5531994615902?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Oficina%20Diesel." target="_blank" rel="noopener" class="link-dark link-underline-opacity-0">(31) 99461-5902</a> <span class="text-secondary fw-normal">· WhatsApp</span></li>
+            <li>contato@oficinadiesel.com</li>
+            <li class="text-secondary">Seg a Sex, 7h às 17h</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body p-4">
+
+              <div id="msgSucesso" class="alert alert-success d-none" role="alert"></div>
+
+              <form id="formContato" novalidate>
+                <div class="row g-3">
+
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                    <div class="invalid-feedback">Informe seu nome.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" pattern="[0-9\s\(\)\+\-]{8,}" required>
+                    <div class="invalid-feedback">Informe um telefone válido, com DDD.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail <span class="text-secondary">(opcional)</span></label>
+                    <input type="email" class="form-control" id="email">
+                    <div class="invalid-feedback">Esse e-mail não parece válido.</div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="veiculo" class="form-label">Tipo de veículo</label>
+                    <select class="form-select" id="veiculo">
+                      <option>Caminhão</option>
+                      <option>Ônibus</option>
+                      <option>Máquina pesada</option>
+                      <option>Outro</option>
+                    </select>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="assunto" class="form-label">O que você precisa?</label>
+                    <select class="form-select" id="assunto" required>
+                      <option value="">Escolha uma opção</option>
+                      <option>Agendar revisão</option>
+                      <option>Pedir orçamento</option>
+                      <option>Plano Revisão avulsa</option>
+                      <option>Plano Frota</option>
+                      <option>Contrato Empresarial</option>
+                      <option>Outro assunto</option>
+                    </select>
+                    <div class="invalid-feedback">Escolha o que você precisa.</div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem <span class="text-secondary">(opcional)</span></label>
+                    <textarea class="form-control" id="mensagem" rows="3" placeholder="Conte o problema, o modelo do veículo ou o que quiser orçar"></textarea>
+                  </div>
+
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-warning w-100">Enviar pedido</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JANELA "SAIBA MAIS" / "LER MAIS" -->
+  <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoTitulo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalInfoTitulo"></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body" id="modalInfoTexto"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Fechar</button>
+          <a href="#contato" class="btn btn-warning" id="modalPedir">Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <h3 class="h5 fw-bold">Oficina Diesel</h3>
+          <p class="text-white-50">Manutenção de caminhões, ônibus e máquinas pesadas com mecânicos de linha pesada.</p>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <h3 class="h6 text-uppercase">Navegação</h3>
+          <ul class="list-unstyled">
+            <li><a href="#servicos" class="link-light link-underline-opacity-0">Serviços</a></li>
+            <li><a href="#precos" class="link-light link-underline-opacity-0">Preços</a></li>
+            <li><a href="#novidades" class="link-light link-underline-opacity-0">Novidades</a></li>
+            <li><a href="#contato" class="link-light link-underline-opacity-0">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <h3 class="h6 text-uppercase">Contato</h3>
+          <ul class="list-unstyled text-white-50">
+            <li><a href="https://wa.me/5531994615902?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Oficina%20Diesel." target="_blank" rel="noopener" class="link-light link-underline-opacity-0">(31) 99461-5902</a> · WhatsApp</li>
+            <li>contato@oficinadiesel.com</li>
+            <li>Seg a Sex, 7h às 17h</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary my-4">
+      <p class="text-center text-white-50 small mb-0">© 2026 Oficina Diesel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // 1) Botões que levam ao formulário já escolhem o assunto
+    document.querySelectorAll('[data-assunto]').forEach(function (botao) {
+      botao.addEventListener('click', function () {
+        document.getElementById('assunto').value = botao.dataset.assunto;
+      });
+    });
+
+    // 2) Janela de "Saiba mais" e "Ler mais": coloca o título e o texto do botão clicado
+    var janela = document.getElementById('modalInfo');
+    janela.addEventListener('show.bs.modal', function (evento) {
+      var botao = evento.relatedTarget;
+      document.getElementById('modalInfoTitulo').textContent = botao.dataset.titulo;
+      document.getElementById('modalInfoTexto').textContent = botao.dataset.texto;
+    });
+
+    // O botão "Pedir orçamento" da janela fecha ela e leva ao formulário
+    document.getElementById('modalPedir').addEventListener('click', function (evento) {
+      evento.preventDefault();
+      document.getElementById('assunto').value = 'Pedir orçamento';
+      janela.addEventListener('hidden.bs.modal', function () {
+        document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });
+      }, { once: true });
+      bootstrap.Modal.getInstance(janela).hide();
+    });
+
+    // 3) Formulário: confere os campos e mostra a mensagem de sucesso
+    var formulario = document.getElementById('formContato');
+    var sucesso = document.getElementById('msgSucesso');
+    formulario.addEventListener('submit', function (evento) {
+      evento.preventDefault();
+      if (!formulario.checkValidity()) {
+        formulario.classList.add('was-validated');
+        return;
+      }
+      var primeiroNome = document.getElementById('nome').value.trim().split(' ')[0];
+      sucesso.textContent = 'Pedido enviado, ' + primeiroNome + '! Nossa equipe vai entrar em contato pelo telefone informado em até 1 dia útil.';
+      sucesso.classList.remove('d-none');
+      formulario.reset();
+      formulario.classList.remove('was-validated');
+    });
+  </script>
+</body>
+</html>

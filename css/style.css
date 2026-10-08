@@ -1,0 +1,146 @@
+
+
+/* ---------- 1. Cores e fontes ---------- */
+:root {
+  --cor-grafite: #1c1f23;
+  --cor-amarelo: #f5b400;      
+  --cor-amarelo-escuro: #d99a00;
+
+  --fonte-titulo: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --fonte-texto: 'Barlow', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Troca as cores internas do Bootstrap --*/
+  --bs-dark-rgb: 28, 31, 35;
+  --bs-warning-rgb: 245, 180, 0;
+}
+
+
+/* ---------- 2. Base da página ---------- */
+html {
+  scroll-padding-top: 70px;   
+  scroll-behavior: smooth;     
+}
+
+body {
+  font-family: var(--fonte-texto);
+}
+
+
+/* ---------- 3. Títulos ---------- */
+h1, h2, h3, .navbar-brand {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Faixa amarela embaixo dos títulos das seções */
+section h2::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 4px;
+  margin-top: 0.6rem;
+  background-color: var(--cor-amarelo);
+}
+
+/* Nas seções centralizadas, a faixa também fica centro */
+.text-center h2::after,
+h2.text-center::after {
+  margin-inline: auto;
+}
+
+
+/* ---------- 4. Menu ---------- */
+.navbar {
+  border-bottom: 3px solid var(--cor-amarelo);
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+
+/* ---------- 5. Botões ---------- */
+.btn {
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+}
+
+.btn-warning {
+  --bs-btn-bg: var(--cor-amarelo);
+  --bs-btn-border-color: var(--cor-amarelo);
+  --bs-btn-hover-bg: var(--cor-amarelo-escuro);
+  --bs-btn-hover-border-color: var(--cor-amarelo-escuro);
+  --bs-btn-active-bg: var(--cor-amarelo-escuro);
+  --bs-btn-active-border-color: var(--cor-amarelo-escuro);
+}
+
+/* Contorno amarelo visível quando navega pelo teclado */
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--cor-amarelo);
+  outline-offset: 2px;
+}
+
+
+/* ---------- 6. Imagens ---------- */
+section img.rounded {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Fotos das novidades: todas com a mesma altura */
+.foto-novidade {
+  height: 220px;
+  object-fit: cover;
+}
+
+
+/* ---------- 7. Cartões ---------- */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12);
+}
+
+/* Planos: botões sempre alinhados no fim do cartão */
+#precos .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#precos .card-body .w-100 {
+  margin-top: auto;
+}
+
+/* Novidades: botão "Ler mais" sempre no fim do cartão */
+#novidades .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#novidades .card-body .btn {
+  margin-top: auto;
+}
+
+
+/* ---------- 8. Rodapé ---------- */
+footer a:hover {
+  color: var(--cor-amarelo) !important;
+}
+
+
+/* ---------- 9. Acessibilidade: respeita quem desliga animações ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card { transition: none; }
+  .card:hover { transform: none; }
+}
